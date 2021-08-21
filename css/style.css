@@ -1,0 +1,65 @@
+#code-btn:hover {
+    background-color: 00c88f;
+    color: #fff;
+    transition: 1s;
+    background-color: #00c88f;
+}
+#code-btn {
+    padding: 6px 12px;
+    border: 1px solid #00c88f;
+    border-radius: 10px;
+    margin: 2px 2px 3px 4px;
+    color: #FFF;
+    background-color: #ff0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    display: flex;
+    margin: auto;
+}
+/*---------
+ image-style
+------------ */
+/* img{
+    margin-left: 50px;
+    height:500px;
+    width: 500px;
+
+}
+main{
+    margin-left: 100px;
+}
+table{
+   margin-top: 50px;
+}
+td{
+    border-bottom: 1px solid gray; 
+} */ 
