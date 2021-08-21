@@ -38,17 +38,19 @@ document.getElementById('charge-delivery').addEventListener('click',  function()
 })
 
 function updateTotal(){
+    const totalPrice=document.getElementById('total-price');
+   
     const bestPrice=parseInt(document.getElementById('Best-Price').innerText);
-    const memoryCost=parseInt(document.getElementById('Extra-Memory').innerText);
-    const storageCost=parseInt(document.getElementById('Extra-Storage').innerText);
-    const deliveryCost=parseInt(document.getElementById('Delivery-Charge').innerText)
-    const totalPrice=document.getElementById('total-price')
-    totalPrice.innerText=bestPrice+memoryCost+storageCost+deliveryCost;
+    const memoryPrice =parseInt(document.getElementById('Extra-Memory').innerText);
+    const storagePrice =parseInt(document.getElementById('Extra-Storage').innerText);
+    const deliveryPrice =parseInt(document.getElementById('Delivery-Charge').innerText);
+    
+    totalPrice.innerText=bestPrice+memoryPrice+storagePrice+deliveryPrice;
 
     // update price after using code 
 
     const offer=document.getElementById('total-with-code');
-    offer.innerText=bestPrice+memoryCost+storageCost+deliveryCost;
+    offer.innerText=bestPrice+memoryPrice+storagePrice+deliveryPrice;
 }
 // coupon code apply 
 
@@ -60,4 +62,4 @@ document.getElementById('code-btn').addEventListener('click',function(){
     }
     
     codeValue.value=''
-})
+});
